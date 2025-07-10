@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix clone</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="main">
+        <nav>
+            <span><img width="72px" src="assets/Photos/logo.svg" alt=""></span>
+            <div>
+                <button class="English">English</button>
+                <button class="signin">Sign In</button>
+            </div>
+        </nav>
+        <div class="box">
+        </div>
+        <div class="hero">
+            <span>Unlimited movies, TV shows and more</span>
+            <span>Watch anywhere. Cancel anytime.</span>
+            <span>Ready to watch? Enter your email to create or restart your membership.</span>
+            <div class="level">
+                <input type="text" placeholder="  Email Address" class="email">
+                <button class="getstarted">Get started&nbsp;&nbsp; > </button>
+            </div>
+        </div>
+        <div class="separation"></div>
+    </div>
+    <section class="first">
+        <div class="column">
+            <span class="l1">Enjoy on your TV</span>
+            <span class="l2">Watch on smart TVs, PlayStation, Xbox, Chromecast, Apple TV, Blu-ray players and
+                more.</span>
+        </div>
+        <div class="secimg">
+            <img src="assets/Photos/tv.png" alt="">
+            <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-tv-in-0819.m4v"
+                autoplay loop muted></video>
+        </div>
+    </section>
+    <div class="separation"></div>
+
+
+    <section class="second">
+        <div class="secimg2">
+            <img src="assets/Photos/mobile-img.jpg" alt="">
+        </div>
+        <div class="column">
+            <span class="l1">Download your shows to watch offline</span>
+            <span class="l2">Save your favourites easily and always have something to watch.</span>
+        </div>
+    </section>
+    <div class="separation"></div>
+
+    <section class="third">
+        <div class="column">
+            <span class="l1">Watch everywhere</span>
+            <span class="l2">Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</span>
+        </div>
+        <div class="secimg">
+            <img src="assets/Photos/rajma-chawal.png" alt="">
+            <video src="https://assets.nflxext.com/ffe/siteui/acquisition/ourStory/fuji/desktop/video-devices-in.m4v"
+                autoplay loop muted></video>
+        </div>
+    </section>
+    <div class="separation"></div>
+
+    <section class="fourth">
+        <div class="secimg">
+            <img src="assets/Photos/img-children.png" alt="">
+
+        </div>
+        <div class="column">
+            <span class="l1">Create profiles for kids</span>
+            <span class="l2">Send children on adventures with their favourite characters in a space made just for them—free with your membership.</span>
+        </div>
+        
+    </section>
+    <div class="separation"></div>
+    <script>
+  document.querySelector(".getstarted").addEventListener("click", () => {
+    window.location.href = "movies.html"; // redirect to movies page
+  });
+</script>
+
+</body>
+
+</html>
