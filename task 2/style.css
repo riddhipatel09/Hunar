@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+}
+
+/* 🌟 Main Background */
+.main {
+  background-image: url(assets/Photos/bg\ image.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.main .box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.6;
+  z-index: 1;
+}
+
+/* 🧭 Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 5vw;
+  position: relative;
+  z-index: 2;
+}
+
+nav img {
+  width: 120px;
+}
+
+nav button {
+  margin-left: 10px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.English {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid white;
+  color: white;
+}
+
+.signin {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+}
+
+/* 🎯 Hero Section */
+.hero {
+  position: relative;
+  z-index: 2;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+  padding: 0 20px;
+}
+
+.hero span:nth-child(1) {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.hero span:nth-child(2) {
+  font-size: 1.5rem;
+}
+
+.hero span:nth-child(3) {
+  font-size: 1.2rem;
+}
+
+.level {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+.email {
+  height: 50px;
+  width: 350px;
+  padding-left: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 16px;
+}
+
+.getstarted {
+  height: 52px;
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 0 20px;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.separation {
+  height: 8px;
+  background-color: rgba(125, 125, 122, 0.36);
+}
+
+/* 📺 Content Sections */
+.first,
+.second,
+.third,
+.fourth {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 80vw;
+  margin: 60px auto;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+
+.secimg,
+.secimg2 {
+  position: relative;
+  flex: 1 1 45%;
+}
+
+.secimg img,
+.secimg2 img {
+  width: 100%;
+  height: auto;
+  display: block;
+  z-index: 2;
+}
+
+.secimg video {
+  position: absolute;
+  top: 20%;
+  left: 13%;
+  width: 75%;
+  height: 60%;
+  z-index: 1;
+  object-fit: cover;
+}
+
+.column {
+  flex: 1 1 45%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.l1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.l2 {
+  font-size: 1.2rem;
+}
+
+/* 📱 Responsive Breakpoints */
+@media (max-width: 960px) {
+  .hero span:nth-child(1) {
+    font-size: 2rem;
+  }
+
+  .hero span:nth-child(2),
+  .hero span:nth-child(3) {
+    font-size: 1rem;
+  }
+
+  .email {
+    width: 80vw;
+  }
+
+  .getstarted {
+    width: 80vw;
+  }
+
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .first,
+  .second,
+  .third,
+  .fourth {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .column {
+    align-items: center;
+  }
+
+  .secimg video {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+
+  .l1 {
+    font-size: 1.8rem;
+  }
+
+  .l2 {
+    font-size: 1rem;
+  }
+  .secimg {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+}
+
+.secimg img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  z-index: 2;
+}
+
+.secimg video {
+  position: absolute;
+  top: 19.5%;
+  left: 13%;
+  width: 74%;
+  height: 63%;
+  z-index: 1;
+  object-fit: cover;
+  border-radius: 4px;
+}
+}
